@@ -5,7 +5,6 @@ import numpy as np
 import requests
 
 # Load the machine learning model and data
-model = pickle.load(open('LinearRegressionModel.pkl', 'rb'))
 car = pd.read_csv('cleaned_csv.csv')
 
 # Set page config

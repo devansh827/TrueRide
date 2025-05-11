@@ -56,7 +56,7 @@ if st.button('Predict Price'):
         'kilo_driven': int(kilo_driven)  # Convert to native int
     }
 
-    response = requests.post('http://127.0.0.1:8000/predict', json=data)
+    response = requests.post('https://trueride-production.up.railway.app/predict', json=data)
     if response.status_code == 200:
         prediction = response.json()
         st.success(f"Predicted Price: ₹{prediction['prediction']:,.2f}")

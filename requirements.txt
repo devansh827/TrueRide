@@ -3,3 +3,4 @@ uvicorn==0.29.0
 streamlit==1.35.0
 pandas==2.2.2
 numpy==1.26.4
+scikit-learn
